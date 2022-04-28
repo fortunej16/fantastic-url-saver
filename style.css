@@ -1,0 +1,145 @@
+body {
+				background-size: 380px 300px;
+				background-repeat: no-repeat;
+				background-color: white;
+				padding: 0px;
+				align-items: center;
+				font-family: Arial;
+				min-width: 400px;
+}
+
+input{
+				padding: 5px;
+				align-items: center;
+				margin-bottom: 3.5px;
+				box-sizing: border-box;
+				width: 70%;
+}
+
+button{
+				border: none;
+				background: green;
+				padding: 6px;
+				color: white;
+				cursor: pointer;
+				border-radius: 5px;
+				font-size: small;
+				font-weight: lighter;
+}
+
+button:hover{
+	font-weight: bolder;
+	background-color: black;
+	color: white;
+	transition: 1s ease-in-out;
+}
+
+
+ul{
+				list-style: none;
+				padding-left: 0;
+}
+
+li{
+				text-decoration: none;
+}
+
+a{
+				color: green;
+}
+
+#del {
+	background: transparent;
+	color: green;
+	border: 1px solid green;
+	cursor: pointer;
+}
+
+#del:hover{
+	font-weight: bolder;
+	background-color: green;
+	color: white;
+	transition: 1s ease-in-out;	
+}
+.div{
+	position: relative;
+	width: 500px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: 10px;
+	margin-left: -210px;
+}
+
+#clr{
+	position: absolute;
+	right: 152px;
+	top: 1.2px;
+}
+
+img{
+	width: 35%;
+	height: auto;
+	align-items: center;
+	position: absolute;
+}
+
+#second{
+	display: none;
+	margin-left: 28%;
+	width: 350px;
+	animation: spe 3s ease-in-out 0s;
+}
+
+#first{
+	margin-left: 28%;
+	animation: myframes 3s ease-in-out 0s;
+	display: ;
+}
+
+@media(max-width: 700px){
+	img{
+		width: 50%;
+	}
+
+	#first{
+		margin-left: 18%;
+		animation: myframes1 3s ease-in-out 0s;
+		width: 55%;
+	}
+
+	#second{
+		margin-left: 18%;
+		animation: myframes1 3s ease-in-out 0s;
+		width: 50%;
+	}
+}
+
+
+@keyframes myframes{
+	from{
+		width: 30%;
+	}
+
+	to{
+		width: 35%;
+	}
+}
+
+@keyframes myframes1{
+	from{
+		width: 35%;
+	}
+	to{
+		width: 50%;
+	}
+}
+
+@keyframes spe{
+	from{
+		width: 30%;
+	}
+	to{
+		width: 25%;
+	}
+}
